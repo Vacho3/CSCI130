@@ -22,20 +22,20 @@ func main() {
 {{end}}Reminder of upcoming events:
 {{range .Events }}  - {{.}}
 {{end}}Sincerely,
-
+Vachagan Vardanyan
 
 `
-	var upcomingEvents = []string{	
+	var events = []string{	
 		"Some Big Huge Event (June 5th, 2015)",
-		"My Birthday Party (Bring Gifts) (June 8th, 2015)",
-		"Another Fundraiser (Bring Money) (July 15th, 2015)",
+		"My Birthday Party (Bring Gifts) (June 1th, 2015)",
+		"Another Fundraiser (Bring Money) (July 7th, 2015)",
 	}
 
 	var people = []Person{
-		{"Mrs.", "Tyson", 	true, 	true, 	upcomingEvents},
-		{"Ms.",  "Jason", 	true, 	false, 	upcomingEvents},
-		{"Mr.",  "Vic",     false, 	false, 	upcomingEvents},
-		{"Mr.",  "Shawn", 	false, 	true, 	upcomingEvents},
+		{"Mrs.", "Tyson", 	true, 	true, 	events},
+		{"Ms.",  "Jason", 	true, 	false, 	events},
+		{"Mr.",  "Vic",     false, 	false, 	events},
+		{"Mr.",  "Shawn", 	false, 	true, 	events},
 	}
 
 	tmpl := template.Must(template.New("mailtemplate").Parse(mailtemplate))
