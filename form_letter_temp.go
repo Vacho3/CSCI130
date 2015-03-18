@@ -33,8 +33,8 @@ func main() {
 
 	var people = []Person{
 		{"Mrs.", "Tyson", 	true, 	true, 	upcomingEvents},
-		{"Ms.",  "Jason", 	false, 	false, 	upcomingEvents},
-		{"Mr.",  "Vic", 	true, 	false, 	upcomingEvents},
+		{"Ms.",  "Jason", 	true, 	false, 	upcomingEvents},
+		{"Mr.",  "Vic",     false, 	false, 	upcomingEvents},
 		{"Mr.",  "Shawn", 	false, 	true, 	upcomingEvents},
 	}
 
